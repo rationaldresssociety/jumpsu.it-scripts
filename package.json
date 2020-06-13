@@ -1,0 +1,42 @@
+{
+  "name": "jumpsu.it-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sizing-calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.5.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rclabough/jumpsu.it-scripts.git"
+  },
+  "author": "Robert Clabough",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rclabough/jumpsu.it-scripts/issues"
+  },
+  "homepage": "https://github.com/rclabough/jumpsu.it-scripts#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
