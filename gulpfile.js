@@ -6,9 +6,10 @@ var runSequence = require('run-sequence');
 var babel = require('gulp-babel');
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 // Gulp task to minify JavaScript files
-gulp.task('scripts', function() {
+gulp.task('sizing-calculator', function() {
     return gulp.src(
         [
             'node_modules/babel-polyfill/dist/polyfill.js',
@@ -17,6 +18,7 @@ gulp.task('scripts', function() {
         .pipe(browserify())
         .pipe(babel({presets: ['es2015']}))
         .pipe(uglify())
+        .pipe(concat('sizing-calculator.js'))
         .pipe(gulp.dest('./dist'))
 });
 
@@ -26,6 +28,6 @@ gulp.task('clean', () => del(['dist']));
 // Gulp task to minify all files
 gulp.task('default', ['clean'], function () {
   runSequence(
-    'scripts'
+    'sizing-calculator'
   );
 });
