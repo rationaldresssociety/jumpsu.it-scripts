@@ -10873,89 +10873,14 @@ return jQuery;
 } );
 
 },{}],2:[function(require,module,exports){
-const patterns = [
-    {
-        type: 'fitted',
-        pattern: 'I',
-        chest: {
-            min: 6,
-            max: 9
-        },
-        seat: {
-            min: 9,
-            max: 12
-        }
-    },
-    {
-        type: 'fitted',
-        pattern: 'V',
-        chest: {
-            min: 9.5,
-            max: 12.5
-        },
-        seat: {
-            min: 9,
-            max: 12
-        }
-    },
-    {
-        type: 'fitted',
-        pattern: 'A',
-        chest: {
-            min: 6,
-            max: 9
-        },
-        seat: {
-            min: 12.5,
-            max: 15.6
-        }
-    },
-    {
-        type: 'unfitted',
-        pattern: 'I',
-        chest: {
-            min: 5,
-            max: 7
-        },
-        seat: {
-            min: 5,
-            max: 7
-        }
-    },
-    {
-        type: 'unfitted',
-        pattern: 'V',
-        chest: {
-            min: 7.5,
-            max: 10.5
-        },
-        seat: {
-            min: 5,
-            max: 7
-        }
-    },
-    {
-        type: 'unfitted',
-        pattern: 'A',
-        chest: {
-            min: 5,
-            max: 7
-        },
-        seat: {
-            min: 7.5,
-            max: 10.5
-        }
-    }
-]
-
-
+const patterns = require('./patterns.json')
 
 function findPattern(isFitted, chestDiff, seatDiff) {
     const foundPatterns = patterns.filter(k => k === (isFitted ? 'fitted' : 'unfitted'))
-        .filter(k => k.seat.max >= seatDiff)
-        .filter(k => k.chest.max >= chestDiff)
-        .filter(k => k.seat.min <= seatDiff)
-        .filter(k => k.chest.min <= chestDiff);
+        .filter(k => k.seatDiff.max >= seatDiff)
+        .filter(k => k.chestDiff.max >= chestDiff)
+        .filter(k => k.seatDiff.min <= seatDiff)
+        .filter(k => k.chestDiff.min <= chestDiff);
     if (foundPatterns.length > 0) {
         return foundPatterns[0];
     }
@@ -10965,7 +10890,7 @@ function findPattern(isFitted, chestDiff, seatDiff) {
 module.exports = {
     findPattern: findPattern
 }
-},{}],3:[function(require,module,exports){
+},{"./patterns.json":4}],3:[function(require,module,exports){
 const $ = require('jquery');
 const constants = require('./constants.js');
 if (!$) {
@@ -11031,4 +10956,120 @@ $(document).ready(() => {
 
 
 })
-},{"./constants.js":2,"jquery":1}]},{},[3])
+},{"./constants.js":2,"jquery":1}],4:[function(require,module,exports){
+module.exports=[
+    {
+        "type": "fitted",
+        "pattern": "I",
+        "chestDiff": {
+            "min": 6,
+            "max": 9
+        },
+        "seatDiff": {
+            "min": 9,
+            "max": 12
+        },
+        "patterns": [
+            {
+                "name": "tango",
+                "displayName": "tango",
+                "link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c1896def950b771bd98c017/1545115358985/JUMPSUIT-size-Tango-pattern.pdf",
+                "conditions": {
+                    "chest": {
+                        "min": 32,
+                        "max": 34
+                    },
+                    "seat": {
+                        "min": 35,
+                        "max": 37
+                    },
+                    "height": {
+                        "min": 59,
+                        "max": 62
+                    }
+                }
+            },
+            {
+                "name": "echo",
+                "displayName": "echo",
+                "link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c189718aa4a99481a172c14/1545115416842/JUMPSUIT-size-Echo-pattern.pdf",
+                "conditions": {
+                    "chest": {
+                        "min": 34,
+                        "max": 36
+                    },
+                    "seat": {
+                        "min": 37,
+                        "max": 39
+                    },
+                    "height": {
+                        "min": 59,
+                        "max": 62
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "type": "fitted",
+        "pattern": "V",
+        "chestDiff": {
+            "min": 9.5,
+            "max": 12.5
+        },
+        "seatDiff": {
+            "min": 9,
+            "max": 12
+        }
+    },
+    {
+        "type": "fitted",
+        "pattern": "A",
+        "chestDiff": {
+            "min": 6,
+            "max": 9
+        },
+        "seatDiff": {
+            "min": 12.5,
+            "max": 15.6
+        }
+    },
+    {
+        "type": "unfitted",
+        "pattern": "I",
+        "chestDiff": {
+            "min": 5,
+            "max": 7
+        },
+        "seatDiff": {
+            "min": 5,
+            "max": 7
+        }
+    },
+    {
+        "type": "unfitted",
+        "pattern": "V",
+        "chestDiff": {
+            "min": 7.5,
+            "max": 10.5
+        },
+        "seatDiff": {
+            "min": 5,
+            "max": 7
+        }
+    },
+    {
+        "type": "unfitted",
+        "pattern": "A",
+        "chestDiff": {
+            "min": 5,
+            "max": 7
+        },
+        "seatDiff": {
+            "min": 7.5,
+            "max": 10.5
+        }
+    }
+]
+
+},{}]},{},[3])
