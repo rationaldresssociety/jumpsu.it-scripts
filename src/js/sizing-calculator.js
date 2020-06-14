@@ -5,6 +5,7 @@ if (!$) {
 }
 
 $(document).ready(() => {
+    console.log('Loaded');
     var isFitted = false;
     var height = 0;
     var chest = 0;
@@ -15,7 +16,21 @@ $(document).ready(() => {
     var muscularThighs = false;
 
     /** Events */
+    function loadValues() {
+        isFitted = $('#calc_isFitted').val();
+        height = (Number($('#calc_feet').val()) * 12) + Number($('#calc_inches').val());
+        chest = Number($('#calc_chest').val());
+        waist = Number($('#calc_waist').val());
+        seat = Number($('#calc_seat').val());
+        wearingLayers = $('#calc_opt_layers').prop("checked");
+        lowCrotch = $('#calc_opt_crotch').prop("checked");
+        muscularThighs = $('#calc_opt_seat').prop("checked");
+    }
 
+    $('#calc_btn_submit').on('click', () => {
+        loadValues();
+        calculate();
+    })
 
     /** Logic */
     function calculate() {
@@ -43,7 +58,7 @@ $(document).ready(() => {
     }
 
     function displayPattern(pattern) {
-        
+        console.log(`Found pattern ${pattern}`);
     }
 
 
