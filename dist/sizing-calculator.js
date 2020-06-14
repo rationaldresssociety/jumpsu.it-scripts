@@ -10960,7 +10960,7 @@ $(document).ready(() => {
 module.exports=[
     {
         "type": "fitted",
-        "pattern": "I",
+        "bodyType": "I",
         "chestDiff": {
             "min": 6,
             "max": 9
@@ -11012,7 +11012,7 @@ module.exports=[
     },
     {
         "type": "fitted",
-        "pattern": "V",
+        "bodyType": "V",
         "chestDiff": {
             "min": 9.5,
             "max": 12.5
@@ -11024,7 +11024,7 @@ module.exports=[
     },
     {
         "type": "fitted",
-        "pattern": "A",
+        "bodyType": "A",
         "chestDiff": {
             "min": 6,
             "max": 9
@@ -11036,7 +11036,7 @@ module.exports=[
     },
     {
         "type": "unfitted",
-        "pattern": "I",
+        "bodyType": "I",
         "chestDiff": {
             "min": 5,
             "max": 7
@@ -11048,7 +11048,7 @@ module.exports=[
     },
     {
         "type": "unfitted",
-        "pattern": "V",
+        "bodyType": "V",
         "chestDiff": {
             "min": 7.5,
             "max": 10.5
@@ -11060,7 +11060,7 @@ module.exports=[
     },
     {
         "type": "unfitted",
-        "pattern": "A",
+        "bodyType": "A",
         "chestDiff": {
             "min": 5,
             "max": 7
