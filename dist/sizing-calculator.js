@@ -39,11 +39,11 @@
 				return null;
 			}
 			var patterns = bodyType.patterns.filter(function (k) {
-				return k.seat.min <= seat && k.seat.max >= seat;
+				return k.conditions.seat.min <= seat && k.conditions.seat.max >= seat;
 			}).filter(function (k) {
-				return k.height.min <= height && k.height.max >= height;
+				return k.conditions.height.min <= height && k.conditions.height.max >= height;
 			}).filter(function (k) {
-				return k.chest.min <= chest && k.chest.max >= chest;
+				return k.conditions.chest.min <= chest && k.conditions.chest.max >= chest;
 			});
 			if (!patterns || patterns.length === 0) {
 				return null;
@@ -14932,11 +14932,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				return null;
 			}
 			var patterns = bodyType.patterns.filter(function (k) {
-				return k.seat.min <= seat && k.seat.max >= seat;
+				return k.conditions.seat.min <= seat && k.conditions.seat.max >= seat;
 			}).filter(function (k) {
-				return k.height.min <= height && k.height.max >= height;
+				return k.conditions.height.min <= height && k.conditions.height.max >= height;
 			}).filter(function (k) {
-				return k.chest.min <= chest && k.chest.max >= chest;
+				return k.conditions.chest.min <= chest && k.conditions.chest.max >= chest;
 			});
 			if (!patterns || patterns.length === 0) {
 				return null;
