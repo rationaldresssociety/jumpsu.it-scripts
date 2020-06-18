@@ -18,9 +18,9 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
         return null;
     }
     const patterns = bodyType.patterns
-        .filter(k => k.conditions.seat.min <= seat && k.conditions.seat.max >= seat)
-        .filter(k => k.conditions.height.min <= height && k.conditions.height.max >= height)
-        .filter(k => k.conditions.chest.min <= chest && k.conditions.chest.max >= chest);
+        .filter(k => Number(k.conditions.seat.min) <= seat && Number(k.conditions.seat.max) >= seat)
+        .filter(k => Number(k.conditions.height.min) <= height && Number(k.conditions.height.max) >= height)
+        .filter(k => Number(k.conditions.chest.min) <= chest && Number(k.conditions.chest.max) >= chest);
     if (!patterns || patterns.length === 0) {
         return null;
     }

@@ -39,11 +39,11 @@
 				return null;
 			}
 			var patterns = bodyType.patterns.filter(function (k) {
-				return k.conditions.seat.min <= seat && k.conditions.seat.max >= seat;
+				return Number(k.conditions.seat.min) <= seat && Number(k.conditions.seat.max) >= seat;
 			}).filter(function (k) {
-				return k.conditions.height.min <= height && k.conditions.height.max >= height;
+				return Number(k.conditions.height.min) <= height && Number(k.conditions.height.max) >= height;
 			}).filter(function (k) {
-				return k.conditions.chest.min <= chest && k.conditions.chest.max >= chest;
+				return Number(k.conditions.chest.min) <= chest && Number(k.conditions.chest.max) >= chest;
 			});
 			if (!patterns || patterns.length === 0) {
 				return null;
@@ -14932,11 +14932,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				return null;
 			}
 			var patterns = bodyType.patterns.filter(function (k) {
-				return k.conditions.seat.min <= seat && k.conditions.seat.max >= seat;
+				return Number(k.conditions.seat.min) <= seat && Number(k.conditions.seat.max) >= seat;
 			}).filter(function (k) {
-				return k.conditions.height.min <= height && k.conditions.height.max >= height;
+				return Number(k.conditions.height.min) <= height && Number(k.conditions.height.max) >= height;
 			}).filter(function (k) {
-				return k.conditions.chest.min <= chest && k.conditions.chest.max >= chest;
+				return Number(k.conditions.chest.min) <= chest && Number(k.conditions.chest.max) >= chest;
 			});
 			if (!patterns || patterns.length === 0) {
 				return null;
