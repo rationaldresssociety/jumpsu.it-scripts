@@ -14979,8 +14979,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				waist = Number($('#calc_waist').val());
 				seat = Number($('#calc_seat').val());
 				wearingLayers = $('#calc_opt_layers').prop("checked");
+				if (wearingLayers) {
+					chest += 2;
+					waist += 2;
+					seat += 2;
+				}
 				lowCrotch = $('#calc_opt_crotch').prop("checked");
+				if (lowCrotch) {
+					height += 2;
+				}
 				muscularThighs = $('#calc_opt_seat').prop("checked");
+				if (muscularThighs) {
+					seat += 2;
+				}
 			}
 
 			$('#calc_btn_submit').on('click', function () {
@@ -14996,7 +15007,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				var pattern = constants.findPattern(isFitted, chestDifference, seatDifference, chest, seat, height);
 				if (!pattern) {
 					hidePattern();
-					console.log("Fitted: " + isFitted + "; ChestDiff: " + chestDifference + "; seatDiff: " + seatDifference);
+					console.log("Fitted: " + isFitted + "; ChestDiff: " + chestDifference + "; seatDiff: " + seatDifference + "; seat: " + seat + "; height: " + height + "; chest: " + chest + "; waist: " + waist);
 					return displayError("Could not find a pattern for the requested measurements");
 				}
 				displayPattern(pattern);
@@ -15014,7 +15025,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			}
 
 			function displayPattern(pattern) {
-				console.log("Found pattern " + pattern);
+				console.log("Found pattern", pattern);
 				$('#div_noPatternFound').hide();
 				$('#div_patternFound').show();
 				$('#patternFound_name').text(pattern.pattern.displayName);
