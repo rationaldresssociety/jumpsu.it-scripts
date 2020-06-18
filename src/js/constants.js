@@ -24,7 +24,10 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
     if (!patterns || patterns.length === 0) {
         return null;
     }
-    return patterns[0];
+    return {
+        bodyType: bodyType,
+        pattern: patterns[0]
+    }
 }
 
 module.exports = {

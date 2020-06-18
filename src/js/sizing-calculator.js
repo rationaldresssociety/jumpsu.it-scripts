@@ -51,14 +51,20 @@ $(document).ready(() => {
     /** Actions */
     function displayError(errorMsg) {
         console.error(errorMsg);
+        $('#div_noPatternFound').show();
     }
 
     function hidePattern() {
-
+        $('#div_noPatternFound').hide();
+        $('#div_patternFound').hide();
     }
 
     function displayPattern(pattern) {
         console.log(`Found pattern ${pattern}`);
+        $('#div_noPatternFound').hide();
+        $('#div_patternFound').show();
+        $('#patternFound_name').text(pattern.pattern.displayName);
+        $('#patternFound_link').attr('href', pattern.pattern.link);
     }
 
 

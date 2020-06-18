@@ -48,7 +48,10 @@
 			if (!patterns || patterns.length === 0) {
 				return null;
 			}
-			return patterns[0];
+			return {
+				bodyType: bodyType,
+				pattern: patterns[0]
+			};
 		}
 
 		module.exports = {
@@ -14941,7 +14944,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			if (!patterns || patterns.length === 0) {
 				return null;
 			}
-			return patterns[0];
+			return {
+				bodyType: bodyType,
+				pattern: patterns[0]
+			};
 		}
 
 		module.exports = {
@@ -14999,12 +15005,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			/** Actions */
 			function displayError(errorMsg) {
 				console.error(errorMsg);
+				$('#div_noPatternFound').show();
 			}
 
-			function hidePattern() {}
+			function hidePattern() {
+				$('#div_noPatternFound').hide();
+				$('#div_patternFound').hide();
+			}
 
 			function displayPattern(pattern) {
 				console.log("Found pattern " + pattern);
+				$('#div_noPatternFound').hide();
+				$('#div_patternFound').show();
+				$('#patternFound_name').text(pattern.pattern.displayName);
+				$('#patternFound_link').attr('href', pattern.pattern.link);
 			}
 		});
 	}, { "./constants.js": 2, "jquery": 1 }], 4: [function (require, module, exports) {
