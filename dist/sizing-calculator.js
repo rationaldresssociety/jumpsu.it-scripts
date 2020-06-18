@@ -14973,7 +14973,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 			/** Events */
 			function loadValues() {
-				isFitted = $('#calc_isFitted').val();
+				isFitted = $('#calc_isFitted').val() === 'true';
 				height = Number($('#calc_feet').val()) * 12 + Number($('#calc_inches').val());
 				chest = Number($('#calc_chest').val());
 				waist = Number($('#calc_waist').val());
