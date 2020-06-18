@@ -66,6 +66,7 @@ $(document).ready(() => {
         $('#patternFound_name').text(pattern.pattern.displayName);
         $('#patternFound_link').attr('href', pattern.pattern.link);
     }
+    hidePattern();
 
 
 })

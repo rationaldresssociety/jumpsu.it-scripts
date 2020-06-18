@@ -15020,6 +15020,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#patternFound_name').text(pattern.pattern.displayName);
 				$('#patternFound_link').attr('href', pattern.pattern.link);
 			}
+			hidePattern();
 		});
 	}, { "./constants.js": 2, "jquery": 1 }], 4: [function (require, module, exports) {
 		module.exports = [{
