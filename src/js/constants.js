@@ -1,7 +1,7 @@
 const patterns = require('./patterns.json')
 
 function findBodyType(isFitted, chestDiff, seatDiff) {
-    const foundPatterns = patterns.filter(k => k === (isFitted ? 'fitted' : 'unfitted'))
+    const foundPatterns = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
         .filter(k => k.seatDiff.max >= seatDiff)
         .filter(k => k.chestDiff.max >= chestDiff)
         .filter(k => k.seatDiff.min <= seatDiff)
