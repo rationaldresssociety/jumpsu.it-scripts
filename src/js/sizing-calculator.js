@@ -37,7 +37,7 @@ $(document).ready(() => {
         // Determining your body type, I, V, or A
         var chestDifference = chest - waist;
         var seatDifference = seat - waist;
-        const pattern = constants.findPattern(isFitted, chestDifference, seatDifference);
+        const pattern = constants.findPattern(isFitted, chestDifference, seatDifference, chest, seat, height);
         if (!pattern) {
             hidePattern();
             console.log(`Fitted: ${isFitted}; ChestDiff: ${chestDifference}; seatDiff: ${seatDifference}`);
