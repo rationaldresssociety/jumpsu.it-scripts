@@ -72,6 +72,7 @@ $(document).ready(() => {
             html += `<th>${k.min} - ${k.max}"</th>`
         })
         html += `</tr>`
+        return html;
     }
 
 
