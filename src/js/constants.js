@@ -17,19 +17,18 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
     if (!bodyType) {
         return null;
     }
-    const patterns = bodyType.patterns
-        .filter(k => Number(k.conditions.seat.min) <= seat && Number(k.conditions.seat.max) >= seat)
-        .filter(k => Number(k.conditions.height.min) <= height && Number(k.conditions.height.max) >= height)
-        .filter(k => Number(k.conditions.chest.min) <= chest && Number(k.conditions.chest.max) >= chest);
-    if (!patterns || patterns.length === 0) {
-        return null;
-    }
+    const pattern = bodyType.patterns
+        .filter(k => Number(k.conditions.seat.max) >= seat)
+        .filter(k => Number(k.conditions.height.max) >= height)
+        .filter(k => Number(k.conditions.chest.max) >= chest)
+        .reduce((prev, cur) => prev.conditions.height.max < cur.conditions.height.max ? prev : cur);
     return {
         bodyType: bodyType,
-        pattern: patterns[0]
+        pattern: pattern
     }
 }
 
 module.exports = {
-    findPattern: findPattern
+    findPattern: findPattern,
+    allPatterns: () => patterns
 }

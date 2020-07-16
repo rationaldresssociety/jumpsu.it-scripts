@@ -19,7 +19,7 @@ gulp.task('scripts', function() {
         .pipe(browserify())
         .pipe(babel({presets: ['es2015']}))
         //.pipe(uglify())
-        .pipe(concat('sizing-calculator.js'))
+        //.pipe(concat('sizing-calculator.js'))
         .pipe(gulp.dest('./dist'))
 });
 
