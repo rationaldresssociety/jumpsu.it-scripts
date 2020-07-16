@@ -10492,11 +10492,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 						}).filter(function (k) {
 							return matchValues(k.conditions.height, h);
 						})[0];
-						if (!foundPattern) {
-							break;
-						}
 						html += "<td>";
-						html += "<a href=\"" + foundPattern.link + "\" target=\"_blank\">" + foundPattern.name + "</a>";
+						if (foundPattern) {
+							if (foundPattern.link) {
+								html += "<a href=\"" + foundPattern.link + "\" target=\"_blank\">" + foundPattern.name + "</a>";
+							} else {
+								html += foundPattern.name;
+							}
+						}
 						html += "</td>";
 					}
 

@@ -44,11 +44,15 @@ $(document).ready(() => {
             for(var i = 0; i < headers2.length; i++) {
                 const foundPattern = pattern.patterns.filter(k => matchValues(k.conditions.seat, headers2[i]))
                     .filter(k => matchValues(k.conditions.height, h))[0];
-                if (!foundPattern) {
-                    break;
-                }
                 html += `<td>`
-                html += `<a href="${foundPattern.link}" target="_blank">${foundPattern.name}</a>`;
+                if (foundPattern) {
+                    if (foundPattern.link) {
+                        html += `<a href="${foundPattern.link}" target="_blank">${foundPattern.name}</a>`;
+                    } else {
+                        html += foundPattern.name
+                    }
+                    
+                }
                 html += `</td>`
             }
 
