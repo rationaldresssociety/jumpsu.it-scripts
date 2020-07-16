@@ -10436,13 +10436,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			var patterns = constants.allPatterns();
 
 			patterns.forEach(function (k) {
-				var html = loadTable(k.type, k.bodyType, k);
-				$('#table-location').append(html);
+				if (k && k.type && k.bodyType) {
+					var html = loadTable(k.type, k.bodyType, k);
+					$('#table-location').append(html);
+				}
 			});
 
 			/** Logic */
 			function loadTable(fittedType, bodyType, pattern) {
-				debugger;
 				var html = '';
 				html += "<h3 style=\"white-space:pre-wrap;\">" + fittedType.toUpperCase() + " " + bodyType.toUpperCase() + " MONOGARMENTS HAVE A:</h3>";
 				html += "<p style=\"white-space:pre-wrap;\">Chest difference between " + pattern.chestDiff.min + "\" & " + pattern.chestDiff.max + "\" or above</p>";
