@@ -20,9 +20,9 @@ $(document).ready(() => {
         html += `<p style="white-space:pre-wrap;">And a seat difference between ${pattern.seatDiff.min}" & ${pattern.seatDiff.max}"</p>`;
 
 
-        const headers1 = pattern.patterns.map(k => k.conditions.chest).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur));
-        const headers2 = pattern.patterns.map(k => k.conditions.seat).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur));
-        const vertHeaders = pattern.patterns.map(k => k.conditions.height).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur));
+        const headers1 = pattern.patterns.map(k => k.conditions.chest).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur), []);
+        const headers2 = pattern.patterns.map(k => k.conditions.seat).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur), []);
+        const vertHeaders = pattern.patterns.map(k => k.conditions.height).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur), []);
 
         html = `<table class="patterntable">`;
         html += `<tbody>`
