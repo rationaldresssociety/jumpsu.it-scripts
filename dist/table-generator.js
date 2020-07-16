@@ -10517,6 +10517,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					html += "<th>" + k.min + " - " + k.max + "\"</th>";
 				});
 				html += "</tr>";
+				return html;
 			}
 
 			loadTable();
