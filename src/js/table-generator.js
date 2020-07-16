@@ -17,8 +17,7 @@ $(document).ready(() => {
     /** Logic */
     function loadTable(fittedType, bodyType, pattern) {
         let html = '';
-        html += `<div class="sqs-block code-block sqs-block-code">`;
-        html += `<div class="sqs-block-content">`;
+        
         html += `<h3 style="white-space:pre-wrap;">${fittedType.toUpperCase()} ${bodyType.toUpperCase()} MONOGARMENTS HAVE A:</h3>`;
         html += `<p style="white-space:pre-wrap;">Chest difference between ${pattern.chestDiff.min}" & ${pattern.chestDiff.max}" or above</p>`;
         html += `<p style="white-space:pre-wrap;">And a seat difference between ${pattern.seatDiff.min}" & ${pattern.seatDiff.max}"</p>`;
@@ -28,7 +27,7 @@ $(document).ready(() => {
         const headers2 = pattern.patterns.map(k => k.conditions.seat).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur), []);
         const vertHeaders = pattern.patterns.map(k => k.conditions.height).reduce((prev, cur) => prev.find(k => k.min === cur.min && k.max === cur.max) ? prev : prev.concat(cur), []);
 
-        html = `<table class="patterntable">`;
+        html += `<table class="patterntable">`;
         html += `<tbody>`
         html += headerRow('Chest', headers1);
         html += headerRow('Seat', headers2);
@@ -60,8 +59,6 @@ $(document).ready(() => {
 
         html += `</tbody>`
         html += `</table>`;
-        html += `</div>`;
-        html += `</div>`;
         return html;
 
     }
