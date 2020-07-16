@@ -17,6 +17,8 @@ $(document).ready(() => {
     /** Logic */
     function loadTable(fittedType, bodyType, pattern) {
         let html = '';
+        html += `<div class="sqs-block code-block sqs-block-code">`;
+        html += `<div class="sqs-block-content">`;
         html += `<h3 style="white-space:pre-wrap;">${fittedType.toUpperCase()} ${bodyType.toUpperCase()} MONOGARMENTS HAVE A:</h3>`;
         html += `<p style="white-space:pre-wrap;">Chest difference between ${pattern.chestDiff.min}" & ${pattern.chestDiff.max}" or above</p>`;
         html += `<p style="white-space:pre-wrap;">And a seat difference between ${pattern.seatDiff.min}" & ${pattern.seatDiff.max}"</p>`;
@@ -58,6 +60,8 @@ $(document).ready(() => {
 
         html += `</tbody>`
         html += `</table>`;
+        html += `</div>`;
+        html += `</div>`;
         return html;
 
     }
