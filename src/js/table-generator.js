@@ -77,9 +77,4 @@ $(document).ready(() => {
         html += `</tr>`
         return html;
     }
-
-
-    loadTable();
-
-
 })
