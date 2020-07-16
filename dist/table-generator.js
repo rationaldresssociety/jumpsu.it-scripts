@@ -10449,12 +10449,24 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 				var headers1 = pattern.patterns.map(function (k) {
 					return k.conditions.chest;
+				}).reduce(function (prev, cur) {
+					return prev.find(function (k) {
+						return k.min === cur.min && k.max === cur.max;
+					}) ? prev : prev.concat(cur);
 				});
 				var headers2 = pattern.patterns.map(function (k) {
 					return k.conditions.seat;
+				}).reduce(function (prev, cur) {
+					return prev.find(function (k) {
+						return k.min === cur.min && k.max === cur.max;
+					}) ? prev : prev.concat(cur);
 				});
 				var vertHeaders = pattern.patterns.map(function (k) {
 					return k.conditions.height;
+				}).reduce(function (prev, cur) {
+					return prev.find(function (k) {
+						return k.min === cur.min && k.max === cur.max;
+					}) ? prev : prev.concat(cur);
 				});
 
 				html = "<table class=\"patterntable\">";
