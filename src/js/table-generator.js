@@ -58,6 +58,7 @@ $(document).ready(() => {
 
         html += `</tbody>`
         html += `</table>`;
+        return html;
 
     }
 

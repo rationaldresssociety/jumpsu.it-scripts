@@ -10504,6 +10504,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 				html += "</tbody>";
 				html += "</table>";
+				return html;
 			}
 
 			function matchValues(left, right) {
