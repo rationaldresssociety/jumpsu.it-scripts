@@ -8,7 +8,8 @@ $(document).ready(() => {
     const patterns = constants.allPatterns();
 
     patterns.forEach(k => {
-        loadTable(k.type, k.bodyType, k)
+        const html = loadTable(k.type, k.bodyType, k);
+        $('#table-location').append(html);
     })
 
     /** Logic */

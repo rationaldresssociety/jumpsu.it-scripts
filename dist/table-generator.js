@@ -10436,7 +10436,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			var patterns = constants.allPatterns();
 
 			patterns.forEach(function (k) {
-				loadTable(k.type, k.bodyType, k);
+				var html = loadTable(k.type, k.bodyType, k);
+				$('#table-location').append(html);
 			});
 
 			/** Logic */
