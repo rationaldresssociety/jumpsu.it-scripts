@@ -5,6 +5,7 @@ if (!$) {
 }
 
 $(document).ready(() => {
+    debugger;
     $.getJSON(constants.patternURL, patterns => {
         constants.setPatterns(patterns);
         console.log('Loaded');
@@ -47,7 +48,6 @@ $(document).ready(() => {
 
         /** Logic */
         function calculate() {
-            debugger;
             // Determining your body type, I, V, or A
             var chestDifference = chest - waist;
             var seatDifference = seat - waist;

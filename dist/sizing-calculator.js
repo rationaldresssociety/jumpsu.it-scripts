@@ -10451,6 +10451,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		}
 
 		$(document).ready(function () {
+			debugger;
 			$.getJSON(constants.patternURL, function (patterns) {
 				constants.setPatterns(patterns);
 				console.log('Loaded');
@@ -10493,7 +10494,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 				/** Logic */
 				function calculate() {
-					debugger;
 					// Determining your body type, I, V, or A
 					var chestDifference = chest - waist;
 					var seatDifference = seat - waist;
