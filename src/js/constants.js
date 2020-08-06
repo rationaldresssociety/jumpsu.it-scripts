@@ -17,11 +17,20 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
     if (!bodyType) {
         return null;
     }
-    const pattern = bodyType.patterns
+    const patternsThatAreTooBig = bodyType.patterns
         .filter(k => Number(k.conditions.seat.max) >= seat)
         .filter(k => Number(k.conditions.height.max) >= height)
         .filter(k => Number(k.conditions.chest.max) >= chest)
-        .reduce((prev, cur) => prev.conditions.height.max < cur.conditions.height.max ? prev : cur);
+        .reduce((prev, k) => {
+               prev[k.conditions.chest.max] = prev[k.conditions.chest.max] || [];
+               prev[k.conditions.chest.max].push(k);
+               return prev;
+        }, {}) // Returns an object like { 44: [pattern, pattern, pattern]}
+    const minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(k => Number(k)));
+    const minChestPatterns = patternsThatAreTooBig[minHeight];
+
+    const pattern = minChestPatterns.reduce((prev, cur) => prev.conditions.height.max < cur.conditions.height.max ? prev : cur);
+    
     return {
         bodyType: bodyType,
         pattern: pattern
