@@ -10425,7 +10425,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			var minChestPatterns = patternsThatAreTooBig[minChest];
 
 			var pattern = minChestPatterns.reduce(function (prev, cur) {
-				return prev.conditions.height.max < cur.conditions.height.max ? prev : cur;
+				return Number(prev.conditions.height.max) < Number(cur.conditions.height.max) ? prev : cur;
 			});
 
 			return {
