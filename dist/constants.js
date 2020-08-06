@@ -19,13 +19,13 @@
 			var foundPatterns = patterns.filter(function (k) {
 				return k.type === (isFitted ? 'fitted' : 'unfitted');
 			}).filter(function (k) {
-				return k.seatDiff.max >= seatDiff;
+				return Number(k.seatDiff.max) >= seatDiff;
 			}).filter(function (k) {
-				return k.chestDiff.max >= chestDiff;
+				return Number(k.chestDiff.max) >= chestDiff;
 			}).filter(function (k) {
-				return k.seatDiff.min <= seatDiff;
+				return Number(k.seatDiff.min) <= seatDiff;
 			}).filter(function (k) {
-				return k.chestDiff.min <= chestDiff;
+				return Number(k.chestDiff.min) <= chestDiff;
 			});
 			if (foundPatterns.length > 0) {
 				return foundPatterns[0];

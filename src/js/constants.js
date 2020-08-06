@@ -2,10 +2,10 @@ const patterns = require('./patterns.json')
 
 function findBodyType(isFitted, chestDiff, seatDiff) {
     const foundPatterns = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
-        .filter(k => k.seatDiff.max >= seatDiff)
-        .filter(k => k.chestDiff.max >= chestDiff)
-        .filter(k => k.seatDiff.min <= seatDiff)
-        .filter(k => k.chestDiff.min <= chestDiff);
+        .filter(k => Number(k.seatDiff.max) >= seatDiff)
+        .filter(k => Number(k.chestDiff.max) >= chestDiff)
+        .filter(k => Number(k.seatDiff.min) <= seatDiff)
+        .filter(k => Number(k.chestDiff.min) <= chestDiff);
     if (foundPatterns.length > 0) {
         return foundPatterns[0];
     }
