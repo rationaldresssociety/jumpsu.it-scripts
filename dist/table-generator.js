@@ -10404,15 +10404,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			if (!bodyType) {
 				return null;
 			}
-			var pattern = bodyType.patterns.filter(function (k) {
+			var patternsThatAreTooBig = bodyType.patterns.filter(function (k) {
 				return Number(k.conditions.seat.max) >= seat;
 			}).filter(function (k) {
 				return Number(k.conditions.height.max) >= height;
 			}).filter(function (k) {
 				return Number(k.conditions.chest.max) >= chest;
-			}).reduce(function (prev, cur) {
+			}).reduce(function (prev, k) {
+				prev[k.conditions.chest.max] = prev[k.conditions.chest.max] || [];
+				prev[k.conditions.chest.max].push(k);
+				return prev;
+			}, {}); // Returns an object like { 44: [pattern, pattern, pattern]}
+			var minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(function (k) {
+				return Number(k);
+			}));
+			var minChestPatterns = patternsThatAreTooBig[minHeight];
+
+			var pattern = minChestPatterns.reduce(function (prev, cur) {
 				return prev.conditions.height.max < cur.conditions.height.max ? prev : cur;
 			});
+
 			return {
 				bodyType: bodyType,
 				pattern: pattern
