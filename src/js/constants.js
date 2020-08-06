@@ -11,7 +11,7 @@ function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
         }, {})
     const minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(k => Number(k)));
     const minChestPatterns = patternsThatAreTooBig[minChest];
-    const pattern = minChestPatterns.reduce((prev, cur) => prev.seatDiff.max < cur.seatDiff.max ? prev : cur);
+    const pattern = minChestPatterns.reduce((prev, cur) => Number(prev.seatDiff.max) < Number(cur.seatDiff.max) ? prev : cur);
     return pattern;
 }
 
