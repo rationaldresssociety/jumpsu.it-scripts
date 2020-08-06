@@ -18,6 +18,10 @@
         function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
             var patternsThatAreTooBig = patterns.filter(function (k) {
                 return k.type === (isFitted ? 'fitted' : 'unfitted');
+            }).filter(function (k) {
+                return k.chestDiff.max >= chestDiff;
+            }).filter(function (k) {
+                return k.seatDiff.max >= seatDiff;
             }).reduce(function (prev, k) {
                 prev[k.chestDiff.max] = prev[k.chestDiff.max] || [];
                 prev[k.chestDiff.max].push(k);

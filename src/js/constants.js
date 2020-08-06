@@ -2,6 +2,8 @@ const patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-script
 
 function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
     const patternsThatAreTooBig = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
+            .filter(k => k.chestDiff.max >= chestDiff)
+            .filter(k => k.seatDiff.max >= seatDiff)
             .reduce((prev, k) => {
                 prev[k.chestDiff.max] = prev[k.chestDiff.max] || [];
                 prev[k.chestDiff.max].push(k);
