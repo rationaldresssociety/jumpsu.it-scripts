@@ -1,4 +1,9 @@
-const patterns = require('./patterns.json')
+let patterns = {};
+const patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
+
+function setPatterns(patterns) {
+    patterns = patterns;
+}
 
 function findBodyType(isFitted, chestDiff, seatDiff) {
     const patternsThatAreTooBig = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
@@ -39,6 +44,8 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
 }
 
 module.exports = {
+    setPatterns: setPatterns,
     findPattern: findPattern,
-    allPatterns: () => patterns
+    allPatterns: () => patterns,
+    patternURL: patternURL
 }
