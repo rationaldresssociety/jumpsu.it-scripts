@@ -21,9 +21,9 @@ function findPattern(allPatterns, isFitted, chestDiff, seatDiff, chest, seat, he
         return null;
     }
     const patternsThatAreTooBig = bodyType.patterns
-        .filter(k => Number(k.conditions.seat.max) > seat)
-        .filter(k => Number(k.conditions.height.max) > height)
-        .filter(k => Number(k.conditions.chest.max) > chest)
+        .filter(k => Number(k.conditions.seat.max) >= seat)
+        .filter(k => Number(k.conditions.height.max) > height) // Take the exclusive for the height
+        .filter(k => Number(k.conditions.chest.max) >= chest)
         .reduce((prev, k) => {
                prev[k.conditions.chest.max] = prev[k.conditions.chest.max] || [];
                prev[k.conditions.chest.max].push(k);

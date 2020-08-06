@@ -10409,11 +10409,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				return null;
 			}
 			var patternsThatAreTooBig = bodyType.patterns.filter(function (k) {
-				return Number(k.conditions.seat.max) > seat;
+				return Number(k.conditions.seat.max) >= seat;
 			}).filter(function (k) {
 				return Number(k.conditions.height.max) > height;
-			}).filter(function (k) {
-				return Number(k.conditions.chest.max) > chest;
+			}) // Take the exclusive for the height
+			.filter(function (k) {
+				return Number(k.conditions.chest.max) >= chest;
 			}).reduce(function (prev, k) {
 				prev[k.conditions.chest.max] = prev[k.conditions.chest.max] || [];
 				prev[k.conditions.chest.max].push(k);
