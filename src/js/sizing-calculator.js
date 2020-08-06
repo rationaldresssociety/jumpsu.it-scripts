@@ -45,6 +45,7 @@ $(document).ready(() => {
 
     /** Logic */
     function calculate() {
+        debugger;
         // Determining your body type, I, V, or A
         var chestDifference = chest - waist;
         var seatDifference = seat - waist;
