@@ -7,7 +7,6 @@ if (!$) {
 $(document).ready(() => {
     debugger;
     $.getJSON(constants.patternURL, patterns => {
-        constants.setPatterns(patterns);
         console.log('Loaded');
         var isFitted = false;
         var height = 0;
@@ -51,7 +50,7 @@ $(document).ready(() => {
             // Determining your body type, I, V, or A
             var chestDifference = chest - waist;
             var seatDifference = seat - waist;
-            const pattern = constants.findPattern(isFitted, chestDifference, seatDifference, chest, seat, height);
+            const pattern = constants.findPattern(patterns, isFitted, chestDifference, seatDifference, chest, seat, height);
             if (!pattern) {
                 hidePattern();
                 console.log(`Fitted: ${isFitted}; ChestDiff: ${chestDifference}; seatDiff: ${seatDifference}; seat: ${seat}; height: ${height}; chest: ${chest}; waist: ${waist}`);

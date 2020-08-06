@@ -10379,14 +10379,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			return jQuery;
 		});
 	}, {}], 2: [function (require, module, exports) {
-		var patterns = {};
 		var patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
 
-		function setPatterns(patterns) {
-			patterns = patterns;
-		}
-
-		function findBodyType(isFitted, chestDiff, seatDiff) {
+		function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
 			var patternsThatAreTooBig = patterns.filter(function (k) {
 				return k.type === (isFitted ? 'fitted' : 'unfitted');
 			}).reduce(function (prev, k) {
@@ -10404,8 +10399,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			return pattern;
 		}
 
-		function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
-			var bodyType = findBodyType(isFitted, chestDiff, seatDiff);
+		function findPattern(allPatterns, isFitted, chestDiff, seatDiff, chest, seat, height) {
+			var bodyType = findBodyType(allPatterns, isFitted, chestDiff, seatDiff);
 			if (!bodyType) {
 				return null;
 			}
@@ -10436,7 +10431,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		}
 
 		module.exports = {
-			setPatterns: setPatterns,
 			findPattern: findPattern,
 			allPatterns: function allPatterns() {
 				return patterns;
@@ -10453,7 +10447,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		$(document).ready(function () {
 			debugger;
 			$.getJSON(constants.patternURL, function (patterns) {
-				constants.setPatterns(patterns);
 				console.log('Loaded');
 				var isFitted = false;
 				var height = 0;
@@ -10497,7 +10490,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					// Determining your body type, I, V, or A
 					var chestDifference = chest - waist;
 					var seatDifference = seat - waist;
-					var pattern = constants.findPattern(isFitted, chestDifference, seatDifference, chest, seat, height);
+					var pattern = constants.findPattern(patterns, isFitted, chestDifference, seatDifference, chest, seat, height);
 					if (!pattern) {
 						hidePattern();
 						console.log("Fitted: " + isFitted + "; ChestDiff: " + chestDifference + "; seatDiff: " + seatDifference + "; seat: " + seat + "; height: " + height + "; chest: " + chest + "; waist: " + waist);

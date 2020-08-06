@@ -13,14 +13,9 @@
         s(r[o]);
     }return s;
 })({ 1: [function (require, module, exports) {
-        var patterns = {};
         var patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
 
-        function setPatterns(patterns) {
-            patterns = patterns;
-        }
-
-        function findBodyType(isFitted, chestDiff, seatDiff) {
+        function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
             var patternsThatAreTooBig = patterns.filter(function (k) {
                 return k.type === (isFitted ? 'fitted' : 'unfitted');
             }).reduce(function (prev, k) {
@@ -38,8 +33,8 @@
             return pattern;
         }
 
-        function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
-            var bodyType = findBodyType(isFitted, chestDiff, seatDiff);
+        function findPattern(allPatterns, isFitted, chestDiff, seatDiff, chest, seat, height) {
+            var bodyType = findBodyType(allPatterns, isFitted, chestDiff, seatDiff);
             if (!bodyType) {
                 return null;
             }
@@ -70,7 +65,6 @@
         }
 
         module.exports = {
-            setPatterns: setPatterns,
             findPattern: findPattern,
             allPatterns: function allPatterns() {
                 return patterns;

@@ -1,11 +1,6 @@
-let patterns = {};
 const patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
 
-function setPatterns(patterns) {
-    patterns = patterns;
-}
-
-function findBodyType(isFitted, chestDiff, seatDiff) {
+function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
     const patternsThatAreTooBig = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
             .reduce((prev, k) => {
                 prev[k.chestDiff.max] = prev[k.chestDiff.max] || [];
@@ -18,8 +13,8 @@ function findBodyType(isFitted, chestDiff, seatDiff) {
     return pattern;
 }
 
-function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
-    const bodyType = findBodyType(isFitted, chestDiff, seatDiff);
+function findPattern(allPatterns, isFitted, chestDiff, seatDiff, chest, seat, height) {
+    const bodyType = findBodyType(allPatterns, isFitted, chestDiff, seatDiff);
     if (!bodyType) {
         return null;
     }
@@ -44,7 +39,6 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
 }
 
 module.exports = {
-    setPatterns: setPatterns,
     findPattern: findPattern,
     allPatterns: () => patterns,
     patternURL: patternURL
