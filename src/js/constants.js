@@ -1,15 +1,16 @@
 const patterns = require('./patterns.json')
 
 function findBodyType(isFitted, chestDiff, seatDiff) {
-    const foundPatterns = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
-        .filter(k => Number(k.seatDiff.max) >= seatDiff)
-        .filter(k => Number(k.chestDiff.max) >= chestDiff)
-        .filter(k => Number(k.seatDiff.min) <= seatDiff)
-        .filter(k => Number(k.chestDiff.min) <= chestDiff);
-    if (foundPatterns.length > 0) {
-        return foundPatterns[0];
-    }
-    return null;
+    const patternsThatAreTooBig = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
+            .reduce((prev, k) => {
+                prev[k.chestDiff.max] = prev[k.chestDiff.max] || [];
+                prev[k.chestDiff.max].push(k);
+                return prev;
+        }, {})
+    const minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(k => Number(k)));
+    const minChestPatterns = patternsThatAreTooBig[minChest];
+    const pattern = minChestPatterns.reduce((prev, cur) => prev.seatDiff.max < cur.seatDiff.max ? prev : cur);
+    return pattern;
 }
 
 function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {

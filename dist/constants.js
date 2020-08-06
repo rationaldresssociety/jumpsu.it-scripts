@@ -16,21 +16,21 @@
 		var patterns = require('./patterns.json');
 
 		function findBodyType(isFitted, chestDiff, seatDiff) {
-			var foundPatterns = patterns.filter(function (k) {
+			var patternsThatAreTooBig = patterns.filter(function (k) {
 				return k.type === (isFitted ? 'fitted' : 'unfitted');
-			}).filter(function (k) {
-				return Number(k.seatDiff.max) >= seatDiff;
-			}).filter(function (k) {
-				return Number(k.chestDiff.max) >= chestDiff;
-			}).filter(function (k) {
-				return Number(k.seatDiff.min) <= seatDiff;
-			}).filter(function (k) {
-				return Number(k.chestDiff.min) <= chestDiff;
+			}).reduce(function (prev, k) {
+				prev[k.chestDiff.max] = prev[k.chestDiff.max] || [];
+				prev[k.chestDiff.max].push(k);
+				return prev;
+			}, {});
+			var minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(function (k) {
+				return Number(k);
+			}));
+			var minChestPatterns = patternsThatAreTooBig[minChest];
+			var pattern = minChestPatterns.reduce(function (prev, cur) {
+				return prev.seatDiff.max < cur.seatDiff.max ? prev : cur;
 			});
-			if (foundPatterns.length > 0) {
-				return foundPatterns[0];
-			}
-			return null;
+			return pattern;
 		}
 
 		function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
