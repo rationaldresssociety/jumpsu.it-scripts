@@ -52,7 +52,7 @@
 			var minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(function (k) {
 				return Number(k);
 			}));
-			var minChestPatterns = patternsThatAreTooBig[minHeight];
+			var minChestPatterns = patternsThatAreTooBig[minChest];
 
 			var pattern = minChestPatterns.reduce(function (prev, cur) {
 				return prev.conditions.height.max < cur.conditions.height.max ? prev : cur;
