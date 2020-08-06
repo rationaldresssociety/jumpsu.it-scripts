@@ -27,7 +27,7 @@ function findPattern(isFitted, chestDiff, seatDiff, chest, seat, height) {
                return prev;
         }, {}) // Returns an object like { 44: [pattern, pattern, pattern]}
     const minChest = Math.min.apply(Math, Object.keys(patternsThatAreTooBig).map(k => Number(k)));
-    const minChestPatterns = patternsThatAreTooBig[minHeight];
+    const minChestPatterns = patternsThatAreTooBig[minChest];
 
     const pattern = minChestPatterns.reduce((prev, cur) => prev.conditions.height.max < cur.conditions.height.max ? prev : cur);
     
