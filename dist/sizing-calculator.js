@@ -10487,6 +10487,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				/** Logic */
 				function calculate() {
 					// Determining your body type, I, V, or A
+					debugger;
 					var chestDifference = chest - waist;
 					var seatDifference = seat - waist;
 					var pattern = constants.findPattern(patterns, isFitted, chestDifference, seatDifference, chest, seat, height);
