@@ -5,7 +5,6 @@ if (!$) {
 }
 
 $(document).ready(() => {
-    debugger;
     $.getJSON(constants.patternURL, patterns => {
         console.log('Loaded');
         var isFitted = false;

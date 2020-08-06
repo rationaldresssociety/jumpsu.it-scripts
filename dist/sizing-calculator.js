@@ -10445,7 +10445,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		}
 
 		$(document).ready(function () {
-			debugger;
 			$.getJSON(constants.patternURL, function (patterns) {
 				console.log('Loaded');
 				var isFitted = false;
