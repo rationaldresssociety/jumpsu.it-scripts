@@ -32,7 +32,7 @@
             }));
             var minChestPatterns = patternsThatAreTooBig[minChest];
             var pattern = minChestPatterns.reduce(function (prev, cur) {
-                return prev.seatDiff.max < cur.seatDiff.max ? prev : cur;
+                return Number(prev.seatDiff.max) < Number(cur.seatDiff.max) ? prev : cur;
             });
             return pattern;
         }
