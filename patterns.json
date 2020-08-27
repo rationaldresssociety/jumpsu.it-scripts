@@ -770,6 +770,195 @@
 						"max": "72"
 					}
 				}
+			},
+			{
+				"name": "kelsey",
+				"displayName": "kelsey",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e916590aec6734915b09/1596123415074/JUMPSUIT+size+Kelsey+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "kim",
+				"displayName": "kim",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e95b73c1573a73631a8e/1596123484676/JUMPSUIT+size+Kim+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "beth",
+				"displayName": "beth",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19bd62e6c63135392524a4/1595522404135/JUMPSUIT+size+Beth+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "gail",
+				"displayName": "gail",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19be1a7ab7de041017459c/1595522588696/JUMPSUIT+size+Gail+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "ted",
+				"displayName": "ted",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19c04e231eae5278ff2d51/1595523151459/JUMPSUIT+size+Ted+Pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "dahlia",
+				"displayName": "dahlia",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19bd7fcb028a62b9debfe1/1595522434920/JUMPSUIT+size+Dahlia+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "joan",
+				"displayName": "joan",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19bdfa2386683600c5d2cc/1595522556249/JUMPSUIT+size+Joan+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "mb",
+				"displayName": "mb",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "jude",
+				"displayName": "jude",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19bddf8899924141f56936/1595522529076/JUMPSUIT+size+Jude+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "anne",
+				"displayName": "anne",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19bd31426a3727acb24104/1595522354412/JUMPSUIT+size+Anne+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
 			}
 		]
 	},
@@ -1649,6 +1838,266 @@
 						"max": "69"
 					}
 				}
+			},
+			{
+				"name": "tinker",
+				"displayName": "tinker",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "grace",
+				"displayName": "grace",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "72",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "cup",
+				"displayName": "cup",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e8317463c151c94f7c72/1596123187419/JUMPSUIT+size+Cup+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "pen",
+				"displayName": "pen",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e867a6fdca31aa634393/1596123241256/JUMPSUIT+size+Pen+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "scissor",
+				"displayName": "scissor",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e8af784362703b038948/1596123312531/JUMPSUIT+size+Scissor+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "envelope",
+				"displayName": "envelope",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e8c9a6fdca31aa63559f/1596123338746/JUMPSUIT+size+Envelope+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "paper",
+				"displayName": "paper",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "steam",
+				"displayName": "steam",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "72",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "scarf",
+				"displayName": "scarf",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e84de097e71a40a5eb19/1596123215946/JUMPSUIT+size+Scarf+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "ribbon",
+				"displayName": "ribbon",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e89789b7893214eb9769/1596123288410/JUMPSUIT+size+Ribbon+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "basket",
+				"displayName": "basket",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e6bbf921183be6a9d307/1596122812337/JUMPSUIT+size+Basket+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "chalk",
+				"displayName": "chalk",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f22e7fce097e71a40a5db00/1596123133823/JUMPSUIT+size+Chalk+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "frank",
+				"displayName": "frank",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "oak",
+				"displayName": "oak",
+				"conditions": {
+					"chest": {
+						"min": "56",
+						"max": "59"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "72",
+						"max": "76"
+					}
+				}
 			}
 		]
 	},
@@ -2389,7 +2838,7 @@
 			{
 				"name": "keano",
 				"displayName": "keano",
-				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c18940903ce640e052b3fe7/1545114634178/JUMPSUIT-size-Keano-Pattern.pdf",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f19b9e92a7f101ae0c4b835/1595521514229/JUMPSUIT+size+Keano+Pattern.pdf",
 				"conditions": {
 					"chest": {
 						"min": "47",
@@ -2417,6 +2866,196 @@
 					"seat": {
 						"min": "53",
 						"max": "56"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "shoe",
+				"displayName": "shoe",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c6717fa01f062e66fe7ec/1596745497226/JUMPSUIT+size+Shoe+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "book",
+				"displayName": "book",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c66602e9f7e7662260463/1596745314642/JUMPSUIT+size+Book+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "ohio",
+				"displayName": "ohio",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c66b59befb722151476cf/1596745399244/JUMPSUIT+size+Ohio+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "ampersand",
+				"displayName": "ampersand",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c6635bf6b7c6d86c65492/1596745270995/JUMPSUIT+size+Ampersand+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "rhea",
+				"displayName": "rhea",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c66fb9befb722151488b0/1596745469589/JUMPSUIT+size+Rhea+Pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "50",
+						"max": "53"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "72"
+					}
+				}
+			},
+			{
+				"name": "teacup",
+				"displayName": "teacup",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c672b25042a765b3fa670/1596745518409/JUMPSUIT+size+Teacup+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "59",
+						"max": "62"
+					}
+				}
+			},
+			{
+				"name": "rewind",
+				"displayName": "rewind",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c66dd9befb7221514841a/1596745438997/JUMPSUIT+size+Rewind+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "62",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "spoke",
+				"displayName": "spoke",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2330f0ddd10571df292e31/1596141809132/JUMPSUIT+Size+spoke.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "64",
+						"max": "66"
+					}
+				}
+			},
+			{
+				"name": "center",
+				"displayName": "center",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c6690bd86df6328e91587/1596745362311/JUMPSUIT+size+Center+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "66",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "encyclopedia",
+				"displayName": "encyclopedia",
+				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5f2c667b1a56ca6f8f7bf84a/1596745341003/JUMPSUIT+size+Encyclopedia+pattern.pdf",
+				"conditions": {
+					"chest": {
+						"min": "53",
+						"max": "56"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
 					},
 					"height": {
 						"min": "69",
@@ -2990,6 +3629,24 @@
 				}
 			},
 			{
+				"name": "sól ",
+				"displayName": "sól ",
+				"conditions": {
+					"chest": {
+						"min": "41.5",
+						"max": "43.5"
+					},
+					"seat": {
+						"min": "42",
+						"max": "44"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
 				"name": "dione",
 				"displayName": "dione",
 				"conditions": {
@@ -3296,17 +3953,232 @@
 				}
 			},
 			{
-				"name": "sól",
-				"displayName": "sól",
-				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c198033352f53fd9f2f42f2/1545175092321/JUMPSUIT-size-Sol-Pattern.pdf",
+				"name": "hedgehog",
+				"displayName": "hedgehog",
 				"conditions": {
 					"chest": {
-						"min": "41.5",
-						"max": "43.5"
+						"min": "49.5",
+						"max": "52.5"
 					},
 					"seat": {
-						"min": "42",
-						"max": "44"
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "boris",
+				"displayName": "boris",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "59",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "pony",
+				"displayName": "pony",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "alien",
+				"displayName": "alien",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "grade",
+				"displayName": "grade",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "line",
+				"displayName": "line",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "notch",
+				"displayName": "notch",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "staple",
+				"displayName": "staple",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "59",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "gabriella",
+				"displayName": "gabriella",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "francey",
+				"displayName": "francey",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "buster",
+				"displayName": "buster",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "luciano",
+				"displayName": "luciano",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "rhinebecky",
+				"displayName": "rhinebecky",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
 					},
 					"height": {
 						"min": "73",
@@ -3671,6 +4543,24 @@
 				}
 			},
 			{
+				"name": "aires",
+				"displayName": "aires",
+				"conditions": {
+					"chest": {
+						"min": "43",
+						"max": "44.5"
+					},
+					"seat": {
+						"min": "40.5",
+						"max": "42"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
 				"name": "demeter",
 				"displayName": "demeter",
 				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c19821d4fa51a290865a2b6/1545175582281/JUMPSUIT-size-Demeter-Pattern.pdf",
@@ -3875,21 +4765,362 @@
 				}
 			},
 			{
-				"name": "aries",
-				"displayName": "aries",
-				"link": "https://static1.squarespace.com/static/5bf9afd0f2e6b130dad9312f/t/5c1981be40ec9adb5112adce/1545175487928/JUMPSUIT-size-Aries-Pattern.pdf",
+				"name": "cameron",
+				"displayName": "cameron",
 				"conditions": {
 					"chest": {
-						"min": "43",
-						"max": "44.5"
+						"min": "49.5",
+						"max": "52.5"
 					},
 					"seat": {
-						"min": "40.5",
-						"max": "42"
+						"min": "47",
+						"max": "50"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "chicago",
+				"displayName": "chicago",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "47",
+						"max": "50"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "mouse",
+				"displayName": "mouse",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "47",
+						"max": "50"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "flash",
+				"displayName": "flash",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "47",
+						"max": "50"
 					},
 					"height": {
 						"min": "71",
 						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "snow",
+				"displayName": "snow",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "47",
+						"max": "50"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "terracotta",
+				"displayName": "terracotta",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "velvet",
+				"displayName": "velvet",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "fern",
+				"displayName": "fern",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "arrow",
+				"displayName": "arrow",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "petey",
+				"displayName": "petey",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "pipe",
+				"displayName": "pipe",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "magnet",
+				"displayName": "magnet",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "bobbin",
+				"displayName": "bobbin",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "canaan",
+				"displayName": "canaan",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "verona",
+				"displayName": "verona",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "spool",
+				"displayName": "spool",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "orange",
+				"displayName": "orange",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "thunder",
+				"displayName": "thunder",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "mercator",
+				"displayName": "mercator",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "rattle",
+				"displayName": "rattle",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
 					}
 				}
 			}
@@ -4653,6 +5884,24 @@
 				}
 			},
 			{
+				"name": "lightning",
+				"displayName": "lightning",
+				"conditions": {
+					"chest": {
+						"min": "46.5",
+						"max": "49.5"
+					},
+					"seat": {
+						"min": "50",
+						"max": "53"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
 				"name": "maldini",
 				"displayName": "maldini",
 				"conditions": {
@@ -4721,6 +5970,240 @@
 					"height": {
 						"min": "69",
 						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "cinnamon",
+				"displayName": "cinnamon",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "bianca",
+				"displayName": "bianca",
+				"conditions": {
+					"chest": {
+						"min": "49.5",
+						"max": "52.5"
+					},
+					"seat": {
+						"min": "53",
+						"max": "56"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "gordon",
+				"displayName": "gordon",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "59",
+						"max": "64"
+					}
+				}
+			},
+			{
+				"name": "korbel",
+				"displayName": "korbel",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "loretta",
+				"displayName": "loretta",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "los angeles",
+				"displayName": "los angeles",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "medusa",
+				"displayName": "medusa",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "rain",
+				"displayName": "rain",
+				"conditions": {
+					"chest": {
+						"min": "52.5",
+						"max": "55.5"
+					},
+					"seat": {
+						"min": "56",
+						"max": "59"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "umbrella",
+				"displayName": "umbrella",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "64",
+						"max": "67"
+					}
+				}
+			},
+			{
+				"name": "erzulie",
+				"displayName": "erzulie",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "67",
+						"max": "69"
+					}
+				}
+			},
+			{
+				"name": "freya",
+				"displayName": "freya",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "69",
+						"max": "71"
+					}
+				}
+			},
+			{
+				"name": "paterson",
+				"displayName": "paterson",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "71",
+						"max": "73"
+					}
+				}
+			},
+			{
+				"name": "poplin",
+				"displayName": "poplin",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
 					}
 				}
 			}
