@@ -5039,8 +5039,8 @@
 				"displayName": "spool",
 				"conditions": {
 					"chest": {
-						"min": "58.5”,
-						"max": “61.5”
+						"min": "58.5",
+						"max": "61.5"
 					},
 					"seat": {
 						"min": "56",
@@ -5058,7 +5058,7 @@
 				"conditions": {
 					"chest": {
 						"min": "58.5”,
-						"max": “61.5”
+						"max": "61.5"
 					},
 					"seat": {
 						"min": "56",
@@ -5075,8 +5075,8 @@
 				"displayName": "thunder",
 				"conditions": {
 					"chest": {
-						"min": "58.5”,
-						"max": “61.5”
+						"min": "58.5",
+						"max": "61.5"
 					},
 					"seat": {
 						"min": "56",
@@ -5093,8 +5093,8 @@
 				"displayName": "mercator",
 				"conditions": {
 					"chest": {
-						"min": "58.5”,
-						"max": “61.5”
+						"min": "58.5",
+						"max": "61.5"
 					},
 					"seat": {
 						"min": "56",
@@ -5111,8 +5111,8 @@
 				"displayName": "rattle",
 				"conditions": {
 					"chest": {
-						"min": "58.5”,
-						"max": “61.5”
+						"min": "58.5",
+						"max": "61.5"
 					},
 					"seat": {
 						"min": "56",
