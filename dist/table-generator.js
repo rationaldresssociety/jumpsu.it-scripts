@@ -10501,7 +10501,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 					vertHeaders.forEach(function (h) {
 						html += "<tr>";
-						html += "<th>" + formatInches(h.min) + " - " + formatInches(h.max) + "</th>";
+						html += "<th>" + formatInches(h.min) + "&nbsp;-&nbsp;" + formatInches(h.max) + "</th>";
 						html += "<td></td>";
 						for (var i = 0; i < headers2.length; i++) {
 							var foundPattern = pattern.patterns.filter(function (k) {
@@ -10541,7 +10541,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					html += "<th class=\"emptycell\"></th>";
 					html += "<th>" + title + "</th>";
 					cells.forEach(function (k) {
-						html += "<th>" + formatInches(k.min) + " - " + formatInches(k.max) + "</th>";
+						html += "<th>" + formatInches(k.min) + "&nbsp;-&nbsp;" + formatInches(k.max) + "</th>";
 					});
 					html += "</tr>";
 					return html;
