@@ -5057,7 +5057,7 @@
 				"displayName": "orange",
 				"conditions": {
 					"chest": {
-						"min": "58.5”,
+						"min": "58.5",
 						"max": "61.5"
 					},
 					"seat": {
