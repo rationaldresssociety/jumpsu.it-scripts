@@ -10449,7 +10449,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			throw new Error("jQuery not initialized or found!");
 		}
 
-		$(document).ready(function () {
+		$(window).on('load', function () {
 			$.getJSON(constants.patternURL, function (patterns) {
 
 				patterns.forEach(function (k) {
