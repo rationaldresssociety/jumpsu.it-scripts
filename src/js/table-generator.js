@@ -49,12 +49,12 @@ $(window).on('load', () => {
                         if (foundPattern.link) {
                             html += `<a href="${foundPattern.link}" target="_blank">${foundPattern.name}</a>`;
                         } else {
-                            console.warn(`WARN: Pattern ${foundPattern.name} did not have a link associated with it`);
+                            console.warn(`WARN: Body ${bodyType} FittedType: ${fittedtype} Pattern ${foundPattern.name} did not have a link associated with it`);
                             html += foundPattern.name
                         }
                         
                     } else {
-                        console.warn(`WARN: There was no pattern found for Height (${h.min} - ${h.max}) and Seat (${headers2[i]})`);
+                        console.warn(`WARN: Body ${bodyType} FittedType: ${fittedtype}  There was no pattern found for Height (${h.min} - ${h.max}) and Seat (${headers2[i].min} - ${headers2[i].max})`);
                     }
                     html += `</td>`
                 }
