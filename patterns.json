@@ -5794,6 +5794,24 @@
 				}
 			},
 			{
+				"name": "tally",
+				"displayName": "tally",
+				"conditions": {
+					"chest": {
+						"min": "43.5",
+						"max": "46.5"
+					},
+					"seat": {
+						"min": "47",
+						"max": "50"
+					},
+					"height": {
+						"min": "73",
+						"max": "76"
+					}
+				}
+			},
+			{
 				"name": "ooloi",
 				"displayName": "ooloi",
 				"conditions": {
@@ -6114,6 +6132,24 @@
 					"height": {
 						"min": "73",
 						"max": "76"
+					}
+				}
+			},
+			{
+				"name": "toby",
+				"displayName": "toby",
+				"conditions": {
+					"chest": {
+						"min": "55.5",
+						"max": "58.5"
+					},
+					"seat": {
+						"min": "59",
+						"max": "62"
+					},
+					"height": {
+						"min": "59",
+						"max": "64"
 					}
 				}
 			},
