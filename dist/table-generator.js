@@ -10501,7 +10501,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 					vertHeaders.forEach(function (h) {
 						html += "<tr>";
-						html += "<th>" + h.min + " - " + h.max + "\"</th>";
+						html += "<th>" + formatInches(h.min) + " - " + formatInches(h.max) + "</th>";
 						html += "<td></td>";
 						for (var i = 0; i < headers2.length; i++) {
 							var foundPattern = pattern.patterns.filter(function (k) {
@@ -10541,10 +10541,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					html += "<th class=\"emptycell\"></th>";
 					html += "<th>" + title + "</th>";
 					cells.forEach(function (k) {
-						html += "<th>" + k.min + " - " + k.max + "\"</th>";
+						html += "<th>" + formatInches(k.min) + " - " + formatInches(k.max) + "</th>";
 					});
 					html += "</tr>";
 					return html;
+				}
+
+				function formatInches(inches) {
+					inches = Number(inches);
+					var ft = Math.floor(inches / 12);
+					var rem = inches % 12;
+					return ft + "\u2019" + rem + "\u201D";
 				}
 			});
 		});

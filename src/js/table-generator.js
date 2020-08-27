@@ -39,7 +39,7 @@ $(window).on('load', () => {
 
             vertHeaders.forEach(h => {
                 html += `<tr>`;
-                html += `<th>${h.min} - ${h.max}"</th>`;
+                html += `<th>${formatInches(h.min)} - ${formatInches(h.max)}</th>`;
                 html += `<td></td>`
                 for(var i = 0; i < headers2.length; i++) {
                     const foundPattern = pattern.patterns.filter(k => matchValues(k.conditions.seat, headers2[i]))
@@ -80,10 +80,17 @@ $(window).on('load', () => {
             html += `<th class="emptycell"></th>`
             html += `<th>${title}</th>`
             cells.forEach(k => {
-                html += `<th>${k.min} - ${k.max}"</th>`
+                html += `<th>${formatInches(k.min)} - ${formatInches(k.max)}</th>`
             })
             html += `</tr>`
             return html;
+        }
+
+        function formatInches(inches) {
+            inches = Number(inches);
+            const ft = Math.floor(inches/12);
+            const rem = inches % 12;
+            return `${ft}’${rem}”`;
         }
     })
 })
