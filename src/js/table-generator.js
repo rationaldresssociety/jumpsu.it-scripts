@@ -87,7 +87,7 @@ $(window).on('load', () => {
         }
 
         function formatInches(inches) {
-            retur `${inches || ""}”`
+            return `${inches || ""}”`
             // inches = Number(inches);
             // const ft = Math.floor(inches/12);
             // const rem = inches % 12;
