@@ -2,10 +2,6 @@
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _templateObject = _taggedTemplateLiteral(["", "\u201D"], ["", "\u201D"]);
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 (function e(t, n, r) {
 	function s(o, u) {
 		if (!n[o]) {
@@ -10552,7 +10548,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 				}
 
 				function formatInches(inches) {
-					retur(_templateObject, inches || "");
+					return (inches || "") + "\u201D";
 					// inches = Number(inches);
 					// const ft = Math.floor(inches/12);
 					// const rem = inches % 12;
