@@ -13,7 +13,7 @@
         s(r[o]);
     }return s;
 })({ 1: [function (require, module, exports) {
-        var patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
+        var patternURL = 'https://rationaldresssociety.github.io/jumpsu.it-scripts/patterns.json';
 
         function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
             var patternsThatAreTooBig = patterns.filter(function (k) {

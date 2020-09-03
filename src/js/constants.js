@@ -1,4 +1,4 @@
-const patternURL = 'https://raw.githubusercontent.com/rclabough/jumpsu.it-scripts/master/patterns.json';
+const patternURL = 'https://rationaldresssociety.github.io/jumpsu.it-scripts/patterns.json';
 
 function findBodyType(patterns, isFitted, chestDiff, seatDiff) {
     const patternsThatAreTooBig = patterns.filter(k => k.type === (isFitted ? 'fitted' : 'unfitted'))
