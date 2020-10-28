@@ -4,7 +4,7 @@ if (!$) {
     throw new Error(`jQuery not initialized or found!`);
 }
 console.log('Script here and running');
-$(document).ready(() => {
+const initSizingCalc = () => {
     console.log('Document Ready');
     $.getJSON(constants.patternURL, patterns => {
         console.log('Loaded');
@@ -83,4 +83,11 @@ $(document).ready(() => {
         hidePattern();
 
     })
-})
+};
+
+if (!window.__sizingCalcInitialized) {
+    console.log(`Setting up page load events`)
+    $(document).ready(initSizingCalc); //handle direct page requests
+    window.addEventListener('mercury:load', initSizingCalc); //handle page loads from other sources
+    window.__sizingCalcInitialized = true;
+}

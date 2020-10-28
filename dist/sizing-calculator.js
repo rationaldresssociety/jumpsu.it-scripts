@@ -10449,7 +10449,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			throw new Error("jQuery not initialized or found!");
 		}
 		console.log('Script here and running');
-		$(document).ready(function () {
+		var initSizingCalc = function initSizingCalc() {
 			console.log('Document Ready');
 			$.getJSON(constants.patternURL, function (patterns) {
 				console.log('Loaded');
@@ -10525,5 +10525,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				}
 				hidePattern();
 			});
-		});
+		};
+
+		if (!window.__sizingCalcInitialized) {
+			console.log("Setting up page load events");
+			$(document).ready(initSizingCalc); //handle direct page requests
+			window.addEventListener('mercury:load', initSizingCalc); //handle page loads from other sources
+			window.__sizingCalcInitialized = true;
+		}
 	}, { "./constants.js": 2, "jquery": 1 }] }, {}, [3]);
