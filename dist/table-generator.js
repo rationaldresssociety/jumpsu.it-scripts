@@ -10449,7 +10449,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			throw new Error("jQuery not initialized or found!");
 		}
 
-		$(document).ready(function () {
+		var initSizingTable = function initSizingTable() {
 			$.getJSON(constants.patternURL, function (patterns) {
 
 				patterns.forEach(function (k) {
@@ -10555,5 +10555,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					// return `${ft}’${rem}”`;
 				}
 			});
-		});
+		};
+
+		if (!window.__sizingTableInitialized) {
+			console.log("Setting up page load events");
+			$(document).ready(initSizingTable); //handle direct page requests
+			window.addEventListener('mercury:load', initSizingTable); //handle page loads from other sources
+			window.__sizingTableInitialized = true;
+		}
 	}, { "./constants.js": 2, "jquery": 1 }] }, {}, [3]);

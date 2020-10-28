@@ -4,7 +4,7 @@ if (!$) {
     throw new Error(`jQuery not initialized or found!`);
 }
 
-$(document).ready(() => {
+const initSizingTable = () => {
     $.getJSON(constants.patternURL, patterns => {
 
         patterns.forEach(k => {
@@ -94,4 +94,11 @@ $(document).ready(() => {
             // return `${ft}’${rem}”`;
         }
     })
-})
+}
+
+if (!window.__sizingTableInitialized) {
+    console.log(`Setting up page load events`)
+    $(document).ready(initSizingTable); //handle direct page requests
+    window.addEventListener('mercury:load', initSizingTable); //handle page loads from other sources
+    window.__sizingTableInitialized = true;
+}
