@@ -4,7 +4,7 @@ if (!$) {
     throw new Error(`jQuery not initialized or found!`);
 }
 
-$(window).on('load', () => {
+$(document).ready(() => {
     $.getJSON(constants.patternURL, patterns => {
 
         patterns.forEach(k => {
