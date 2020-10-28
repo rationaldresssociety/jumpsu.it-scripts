@@ -3,7 +3,7 @@ const constants = require('./constants.js');
 if (!$) {
     throw new Error(`jQuery not initialized or found!`);
 }
-
+console.log('Script here and running');
 $(document).ready(() => {
     console.log('Document Ready');
     $.getJSON(constants.patternURL, patterns => {
